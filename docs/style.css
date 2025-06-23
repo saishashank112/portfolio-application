@@ -401,6 +401,54 @@ section {
   color: #ff0000;
 }
 
+/* General center alignment */
+div[style*="text-align: center;"] {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  
+}
+
+/* Styling each box */
+.box {
+  
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography */
+.box h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.box span {
+  display: block;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #ff0000;
+  margin-bottom: 0.5rem;
+}
+
+.box p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+
 /* Contact Section */
 .contact-container {
   display: grid;
@@ -441,7 +489,11 @@ section {
   flex-direction: column;
   gap: 1rem;
 }
-
+.profile{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
 .form-group {
   position: relative;
 }
